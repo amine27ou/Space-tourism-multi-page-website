@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:wght@100;400;600;800&display=swap');
+.app {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 10px;
+  background: transparent;
+  position: absolute;
+  width: 95%;
+  right: 40px;
+  left: 20px;
+}
+.navbar hr{
+  height: 1px;
+  border: none;
+  background-color: rgb(79, 79, 79);
+  width:100%;
+  position: absolute;
+  top: 30%;
+  right: 90%;
+  z-index: 10;
+}
+.home{
+  background-image: url("../public/assets/home/background-home-desktop.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.active-link{
+  border: 3px solid white;
+  border-top: none;
+  padding: 18px 0;
+  border-right: none;
+  border-left: none;
+}
+.navlinks a{
+  color: white;
+  text-decoration: none;
+  width: max-content;
+  margin-right:15px ;
+  font-weight: 100;
+}
+.navlinks ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navlinks ul li a span{
+  font-weight: 800;
+}
+.navlinks{
+  backdrop-filter: blur(5px);
+  background-color: #dbd9d921;
+  padding: 20px;
+  position: relative;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  transform: translateY(200px);
+}
+.home .content .col{
+  display: flex;
+  flex-basis: 45%;
+}
+.home .content .col{
+  flex-direction: column;
+  color: white;
+}
+.home .content .col h1{
+  font-size: 100px;
+  font-family: none;
+}
+.home .content .col .circle h2 {
+  font-family: none;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all .4s;
+}
+.home .content .col .circle h2:hover{
+  opacity: 0.5;
+}
+
+.home .content .col .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.destination{
+    background-image: url("../public/assets/destination/background-destination-desktop.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.planet-container img{
+  width: 240px;
+}
+.title{
+  color: white;
+}
+.title span{
+  color: rgb(113, 111, 111);
+}
+.buttons-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.buttons-container button{
+  border: none;
+  color: white;
+  background-color:transparent;
+  cursor: pointer;
+}
+.buttons-container button p{
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.planet-name{
+  color: white;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-family: none;
+}
+.planet-description{
+  color: white;
+  width: 400px;
+  text-align: start;
+}
+.content{
+  gap: 100px;
+}
+.travel-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+.travel-info p{
+  font-family: none;
+  font-weight: lighter;
+}
+.col hr{
+  margin: 10px 0;
+  background: grey;
+  border: none;
+  height: 1px;
+}
+.crew{
+  background-image: url("../public/assets/crew/background-crew-desktop.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.role{
+  color: rgb(113, 111, 111);
+  font-family: none;
+  font-size: 50px;
+}
+.name{
+  color:white;
+  font-family: none;
+  font-size: 70px;
+}
+.bio{
+  color: white;
+  text-align: start;
+}
+.crew .content{
+  transform: translateY(140px);
+} 
+.crew .content .col:nth-child(1){
+  transform: translateY(-40px);
+}
+.crew .content .col img{
+  width: 400px;
+}
+.crew .content .col{
+  padding: 30px;
+}
+.dot{
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(113, 111, 111);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.activated{
+  background-color: white;
+}
+.active-planet{
+  border: 3px solid white;
+  border-top: none;
+  padding: 14px 0;
+  border-right: none;
+  border-left: none;
+}
+.technology{
+  background-image: url("../public/assets/technology/background-technology-desktop.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.technology .circle{
+  background-color: transparent;
+  color: white;
+  font-size: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top:5px;
+  cursor: pointer;
+}
+.circle.activated-circle{
+  color: black;
+  background-color: white;
+}
+
+.technology .content .col:nth-child(3) img{
+  width: 300px;
+}
+.technology .content .col:nth-child(1){
+  padding: 0 10px;
+}
+.hamburger{
+  display: none;
+}
+@media (max-width:728px){
+  .home{
+    background-image: url("../public/assets/home/background-home-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 130vh;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .destination{
+    background-image: url("../public/assets/destination/background-destination-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 260vh;
+  }
+  .crew{
+    background-image: url("../public/assets/crew/background-crew-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 130vh;
+  }
+  .crew .content{
+    padding: 0;
+    gap: 0;
+  }
+  .technology{
+    background-image: url("../public/assets/technology/background-technology-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 200vh;
+  }
+  
+  .content{
+    font-size: small;
+    padding: 50px;
+    flex-direction: column;
+  }
+  .technology .mini-navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .hamburger{
+    display: block;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .navlinks.active-navlinks ul{
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+  }
+  .navlinks.active-navlinks .active-link{
+    padding: 4px 0;
+  }
+  .navlinks hr{
+    display: none;
+  }
+  .navlinks ul{
+    flex-direction: column;
+  }
+  .navlinks{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 150%;
+    transition: all .4s;
+  }
+  .navlinks.active-navlinks{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    z-index: 100;
+  }
+  .hamburger{
+    margin-right: 20px;
+  }
+  .home .content p{
+    width: 250px;
+    padding: 0 20px;
+  }
+  .home .content .col h1{
+    font-size: 40px;
+    font-family: none;
+  }
+  .hamburger .line{
+    height: 3px;
+    width: 20px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  .active-hamburger{
+    z-index: 101;
+    margin:0 25px ;
+  }
+  .hamburger.active-hamburger .line:nth-child(1){
+    transform: rotate(-45deg) translateY(10px) ;
+  }
+  .hamburger.active-hamburger .line:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active-hamburger .line:nth-child(3){
+    transform: rotate(45deg) translateY(-10px) ;
+  }
+  .buttons-container{
+    gap: 0;
+  }
+  .planet-btn p{
+    width: 90px;
+    font-size: 12px;
+  }
+  .buttons-container{
+    flex-direction: column;
+  }
+  .planet-name{
+    font-size: 30px;
+  }
+  .destination .content p{
+    width: 200px;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .travel-info{
+    gap: 10px;
+    flex-direction: column;
+  }
+  .crew .content .col img{
+    width: 200px;
+    transform: translateY(30px);
+  }
+  .role{
+    font-size: 20px;
+  }
+  .name{
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .bio{
+    padding: 0 10px;
+  }
+  .technology .content .col:nth-child(3) img{
+    width: 200px;
+  }
+}
